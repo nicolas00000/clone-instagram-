@@ -11,10 +11,10 @@
 
 .topo-post{
     background-color: #fff;
-    
+    position: relative;
 border: 1px solid #DBDBDB;
     height: 50px;
-    padding: 0px 10px;
+    padding:  10px;
     display:flex;
     align-items: center;
 }
@@ -39,7 +39,91 @@ border: 1px solid #DBDBDB;
 }
 
 .final-comentarios{
-    background-color: blue;
-    height: 40px;
-    z-index: 1;
+    height: 150px;
+    position:relative;
+}
+
+.caixa-botoes{
+    height: 33px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.botao-curtidas{
+    width: 150px;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.salvar{
+    height: 100%;
+    width: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+i{
+    font-size:22px;
+}
+
+.comentarios{
+    height: 30px;
+    padding:15px;
+    display:flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.foto-comentario{
+    height: 100%;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.foto-comentario img{
+    width:100%;
+    border-radius:  50%;
+    object-fit: cover;
+}
+
+.comentarios strong{
+    font-weight: bold;
+}
+
+.comentarios span{
+    margin-left:10px;
+}
+
+.mensagem{
+    text-align: start;
+    width:70%;
+    margin:0 auto;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.comentar{
+    display:flex;
+    align-items: center;
+    justify-content: none;
+    padding:10px;
+}
+
+
+
+.emoji-feliz{
+    position:absolute;
+}
+
+.trespontinhos{
+    position:absolute;
+    right: 15px;
+    font-weight: bold;
 }

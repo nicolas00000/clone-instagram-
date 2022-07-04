@@ -7,7 +7,11 @@ body{
     display: flex;
     align-items: center;
     background-color: white; 
-    box-shadow: 1px 1px 4px black;   
+    box-shadow: 1px 1px 4px black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
 .centro{
     display: flex;
@@ -50,7 +54,7 @@ input{
 .container-fora{
     width: 900px;
     position: relative;
-    margin: 17px auto;
+    margin: 70px auto;
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +70,11 @@ input{
 border: 1px solid #DBDBDB;
     border-radius:12px;
 }
-
+.borda-degrade{
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(to right, #CDCE2A -8%, #FF0000 59%, #C51589 86%); 
+}
 .cadaUm{
     display: flex;
     justify-content: center;
@@ -76,16 +84,19 @@ border: 1px solid #DBDBDB;
 }
 
 .circulo{
-    background-color: rgb(206, 211, 206);
-    height: 70px;
-    width: 70px;
+    /* background: linear-gradient(to right, #CE5937 0%, #FF0000 50%, #C51589 100%); */
+    height: 61px;
+    width:61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
     border-radius: 50%;
-    border:2px solid red;
 }
 
 .img-story{
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
     border-radius:50%;
     margin: 0 auto;
 }
@@ -99,6 +110,9 @@ border: 1px solid #DBDBDB;
         width: 80%;
     }
 
+    .container-fora{
+        width: 100%;
+    }
     .post{
         margin:0 auto;
         width: 80%;
@@ -131,7 +145,14 @@ border: 1px solid #DBDBDB;
     margin-top:6px;
     margin-left: 22px;
 }
-
+.sugestao{
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #8e8e8e;
+}
 .copy,.link{
     font-family: 'Roboto';
 font-style: normal;
@@ -182,7 +203,7 @@ padding:8px 20px;
 }
 
 .nomeVdd{
-    color: #b4acac;
+    color: #8e8e8e;
     margin-top: 3px;
 }
 
